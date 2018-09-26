@@ -1,0 +1,25 @@
+# Mount Mixer (e.g. Gimbal, servo-controlled gimbal, etc...)
+
+# Gimbal Pitch (AUX1)
+M: 1
+S: 2 1  10000  10000      0 -10000  10000
+
+# Gimbal Roll (AUX2)
+M: 1
+S: 2 0  10000  10000      0 -10000  10000
+
+# Gimbal Yaw (AUX3)
+M: 1
+S: 2 2  10000  10000      0 -10000  10000
+
+# Gimbal Zoom (AUX4)
+M: 1
+S: 2 3  10000  10000      0 -10000  10000
+
+# Electromagnet (AUX5)
+M: 1
+S: 3 7  10000  10000      0 -10000  10000
+
+# Landing gear (AUX6)
+M: 1
+S: 0 7  10000  10000      0 -10000  10000
