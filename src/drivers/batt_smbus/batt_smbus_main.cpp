@@ -506,11 +506,11 @@ batt_smbus_main(int argc, char *argv[])
 
 			if (PX4_OK != bus.dev->dataflash_write(address, tx_buf, length)) {
 				PX4_INFO("Dataflash write failed: %d", address);
-				usleep(100000);
+				px4_usleep(100000);
 				return 1;
 
 			} else {
-				usleep(100000);
+				px4_usleep(100000);
 				return 0;
 			}
 		}

@@ -144,7 +144,7 @@ int BATT_SMBUS::block_write(const uint8_t cmd_code, void *data, const unsigned b
 		if (PX4_OK != _interface->write(0, buf, sizeof(buf))) {
 			i++;
 			PX4_WARN("block_write failed: %d", i);
-			usleep(100000);
+			px4_usleep(100000);
 
 		} else {
 			return PX4_OK;

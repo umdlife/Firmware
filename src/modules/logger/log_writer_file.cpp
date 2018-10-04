@@ -325,7 +325,7 @@ int LogWriterFile::write_message(void *ptr, size_t size, uint64_t dropout_start)
 		while ((ret = write(ptr, size, dropout_start)) == -1) {
 			unlock();
 			notify();
-			usleep(3000);
+			px4_usleep(3000);
 			lock();
 		}
 

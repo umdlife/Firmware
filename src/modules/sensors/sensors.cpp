@@ -642,7 +642,7 @@ Sensors::run()
 				_voted_sensors_update.initialize_sensors();
 			}
 
-			usleep(1000);
+			px4_usleep(1000);
 
 			continue;
 		}
