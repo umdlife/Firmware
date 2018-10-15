@@ -49,7 +49,7 @@ add_library(px4_layer
 	px4_posix_tasks.cpp
 	px4_sem.cpp
 	lib_crc32.c
-	drv_hrt.c
+	drv_hrt.cpp
 	${SHMEM_SRCS}
 )
 target_link_libraries(px4_layer PRIVATE work_queue)
